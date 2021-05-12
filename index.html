@@ -1,0 +1,123 @@
+    <!DOCTYPE html>
+
+<html>
+    <head>
+        <title>iPhone XII</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
+        
+    </head>
+    
+    
+    <body>
+        
+        
+        <div class="main">
+            <nav>
+                
+                <div class="logo">
+                    <img src="images/apple.png">
+                    <p>Experince the all new Boss Phone </p>
+                </div>
+                
+                <div class="nav-links">
+                    
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+                    
+                </div>
+            
+            </nav>
+            
+            
+            <div class="information">
+                <div class="overlay"></div>
+
+                
+                <div>
+                
+                   
+                   <img src="images/iphone-12-red-select-2020.png" class="bosscake">
+                    
+                </div>
+                
+                <div id="circles">
+                
+                    <div class="feature one"> <img src="images/camera.png"> 
+                            <p> Camera 20mp </p>
+                    </div>
+                    
+                    <div class="feature two"> <img src="images/processor.png">
+                            <p> A13 Bionic Chip </p>
+                    </div>
+                    
+                    <div class="feature three"> <img src="images/battery.png"> 
+                            <p> Battery </p>
+                    </div>
+                    
+                    <div class="feature four"> <img src="images/display.png"> 
+                            <p> HD Display </p>
+                    </div>
+                    
+                    
+                    
+                </div>
+                    
+                
+            
+            
+            </div>
+            
+            
+            <div class="control">
+                <img src="images/arrow.png" id="upBtn">
+                <h4 style="color: white">Features</h4>
+                <img src="images/arrow.png" id  ="downBtn">
+            </div>
+                    
+                    
+                    
+         </div>
+        
+        <script>
+        
+                var circles = document.getElementById("circles");
+                var upBtn = document.getElementById("upBtn"); 
+                var downBtn = document.getElementById("downBtn");
+
+            
+                var rotateValue = circles.style.transform;
+                var rotateSum;
+            
+            
+                upBtn.onclick = function(){
+                    rotateSum = rotateValue + "rotate(-90deg)";
+                    circles.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+            }
+                
+                downBtn.onclick = function(){
+                    rotateSum = rotateValue + "rotate(90deg)";
+                    circles.style.transform = rotateSum;
+                    rotateValue = rotateSum;
+            }
+            
+            
+            
+        </script>
+                    
+              
+            
+            
+            
+        
+    </body>
+</html>

@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 Mar, 2021, 1:10:00 AM
+    Author     : himan
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: sans-serif;
+}
+
+.main{
+    width:100%;
+    
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+  background-image: linear-gradient(to bottom right, black , black);
+  
+}
+
+nav{
+   
+    width: 80%;
+    position: sticky;
+    margin:  20px auto;
+    z-index: 1;
+    display:   flex;
+    align-items: center;
+    
+    
+}
+
+.logo{
+      
+     flex-basis: 20%;
+     
+ 
+    }
+
+.logo img{
+        width: 50px;
+        margin: -10px -75px;
+ }
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+
+#circles{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    
+    
+    border-radius: 50%;
+   transition: 1s;
+}
+
+.feature img{
+    width: 180px;
+   
+ 
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    
+    
+}
+
+.one{
+    top: 42%;
+    left: 72%;
+}
+
+.two{
+    bottom: 10%;
+    left: 35%;
+    transform: rotate(90deg);
+    
+}
+
+.three{
+    bottom: 75%;
+    left: 35%;
+    transform: rotate(-90deg);
+}
+
+.four{
+    top:43%;
+    left: 5%;
+    transform: rotate(-180deg);
+}
+
+.one p{
+    margin: 40px 20px;
+    color: white;
+}
+
+.two p{
+    margin: 40px 30px;
+    color: white;
+}
+
+.three p{
+    margin: 40px 10px;
+    color: white;
+}
+
+.four p{
+    margin: 40px 10px;
+    color: white;
+}
+
+
+.bosscake{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+    
+}
+
+.control{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+
+
+.control h4{
+    margin: 10px 5px;
+    font-size: 30px;
+    
+}
+
+#upBtn{
+    width: 25px;
+    cursor: pointer;
+    background: black;
+}
+
+
+#downBtn{
+    width: 25px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    background: black;
+}
+
+
+
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid black;
+    border-bottom: 500px solid white;
+    border-left: 500px solid white;
+    position: absolute; 
+    left: 0;
+    top: 0;
+
+}
+
+.logo p{
+    
+    font-family: monospace;
+    display: flex;
+    top: 120%;
+    position: absolute;
+    color: black;
+    font-size: 17px;
+    margin-left: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
